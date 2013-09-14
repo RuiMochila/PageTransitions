@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>My Page Transitions</title>
+		<link rel="stylesheet" type="text/css" href="css/pages.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+		<link rel="stylesheet" type="text/css" href="css/ratchet.css" />
+		<script src="js/vendor/modernizr.custom.js"></script>
+		<script src="js/vendor/jquery-1.10.2.js"></script>
+	</head>
+	<body  style='-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;' 
+ 			unselectable='on'
+ 			onselectstart='return false;' 
+ 			onmousedown='return false;'>	
+		<div id="pages-main" class="pages-perspective">
+			
+			<div id="one" class="page page-init">
+				<header class="bar-title">
+            	<h1 class="title">Sample Transition</h1>
+            	<a class="button-next" onclick='changePage($("#one"),$("#two"),"right");'>Next</a>
+        		</header>
+        		<div class="content">
+
+        			<ul class="list">
+		              <li>
+		                <a href="#" id="urbano_button">
+		                  Go Somewhere
+		                  <span class="chevron"></span>
+		                </a>
+		              </li>
+		              <li>
+		                <a href="#">
+		                  Go Somewhere
+		                  <span class="chevron"></span>
+		                </a>
+		              </li>
+		              <li>
+		                <a href="#">
+		                  Go Somewhere
+		                  <span class="chevron"></span>
+		                </a>
+		              </li>
+		          </ul>
+
+				</div>
+			</div>
+			
+			<div id="two" class="page">
+				<header class="bar-title">
+				<a class="button-prev" onclick='changePage($("#two"),$("#one"),"left");'>Back</a>
+            	<h1 class="title">Sample Transition</h1>
+            	<a class="button-next" onclick='changePage($("#two"),$("#three"),"right");'>Next</a>
+        		</header>
+        		<div class="content">
+					Some content
+				</div>
+			</div>
+
+			<div id="three" class="page">
+				<header class="bar-title">
+				<a class="button-prev" onclick='changePage($("#three"),$("#two"),"left");'>Back</a>
+            	<h1 class="title">Sample Transition</h1>
+            	<!-- <a class="button-next" href="#">Next</a> -->
+        		</header>
+        
+        		<div class="content">
+
+		            
+            	
+        		</div>        
+			</div>
+
+		</div>
+
+		<script src="js/pagetransitions.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

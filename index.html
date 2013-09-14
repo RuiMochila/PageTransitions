@@ -19,7 +19,7 @@
 			<div id="one" class="page page-init">
 				<header class="bar-title">
             	<h1 class="title">Sample Transition</h1>
-            	<a class="button-next" onclick='changePage($("#one"),$("#two"),"right");'>Next</a>
+            	<a class="button-next" onclick='changePage($("#two"),"right");'>Next</a>
         		</header>
         		<div class="content">
 
@@ -49,9 +49,9 @@
 			
 			<div id="two" class="page">
 				<header class="bar-title">
-				<a class="button-prev" onclick='changePage($("#two"),$("#one"),"left");'>Back</a>
+				<a class="button-prev" onclick='changePage($("#one"),"left");'>Back</a>
             	<h1 class="title">Sample Transition</h1>
-            	<a class="button-next" onclick='changePage($("#two"),$("#three"),"right");'>Next</a>
+            	<a class="button-next" onclick='changePage($("#three"),"right");'>Next</a>
         		</header>
         		<div class="content">
 					Some content
@@ -60,7 +60,7 @@
 
 			<div id="three" class="page">
 				<header class="bar-title">
-				<a class="button-prev" onclick='changePage($("#three"),$("#two"),"left");'>Back</a>
+				<a class="button-prev" onclick='changePage($("#two"),"left");'>Back</a>
             	<h1 class="title">Sample Transition</h1>
             	<!-- <a class="button-next" href="#">Next</a> -->
         		</header>

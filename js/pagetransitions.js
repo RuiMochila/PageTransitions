@@ -30,7 +30,8 @@ var	isAnimating = false,
 	support = Modernizr.cssanimations;
 
 //animações disponívels: "left" e "right"
-function changePage($current, $next, animation) {
+function changePage($next, animation) {
+	$current = $('.page-current');
 
 	if( isAnimating ) {
 		return false;
@@ -69,7 +70,7 @@ function changePage($current, $next, animation) {
 	} );
 
 	if( !support ) {
-		onEndAnimation( $currPage, $nextPage );
+		onEndAnimation( $current, $next );
 	}
 
 }

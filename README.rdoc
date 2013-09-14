@@ -1,0 +1,27 @@
+== Simple Page Transitions
+
+Structure:
+
+<div id="pages-main" class="pages-perspective"> 
+
+  //all pages go here...
+
+</div>
+
+//This is a page:
+
+<div id="someId" class="page">
+	//content...
+</div>
+
+//The initial page need to have the class "page-init"
+
+<div class="page page-init">
+	//content...
+</div>
+
+
+The instruction that drive the action:
+
+changePage($nextPage,"right");
+changePage($nextPage,"left");

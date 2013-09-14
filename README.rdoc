@@ -2,26 +2,31 @@
 
 Structure:
 
-<div id="pages-main" class="pages-perspective"> 
+  <div id="pages-main" class="pages-perspective"> 
 
-  //all pages go here...
+    //all pages go here...
 
-</div>
+  </div>
 
-//This is a page:
+This is a page:
 
-<div id="someId" class="page">
-	//content...
-</div>
+  <div id="someId" class="page">
 
-//The initial page need to have the class "page-init"
+    //content...
 
-<div class="page page-init">
-	//content...
-</div>
+  </div>
+
+The initial page need to have the class "page-init"
+
+  <div class="page page-init">
+
+    //content...
+
+  </div>
 
 
 The instruction that drive the action:
 
-changePage($nextPage,"right");
-changePage($nextPage,"left");
+  changePage($nextPage,"right");
+  
+  changePage($nextPage,"left");
